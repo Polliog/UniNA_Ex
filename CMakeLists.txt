@@ -17,4 +17,8 @@ add_executable(esercizio_e1_081122 ./E081122/esercizio_1.cpp)
 add_executable(esercizio_e2_081122 ./E081122/esercizio_2.cpp)
 add_executable(esercizio_e3_081122 ./E081122/esercizio_3.cpp)
 
+add_executable(esercizio_e4_091122 ./E091122/esercizio_4.cpp)
+add_executable(esercizio_e5_091122 ./E091122/esercizio_5.cpp)
+add_executable(esercizio_e6_091122 ./E091122/esercizio_6.cpp)
+
 add_executable(appunti_081122 ./appunti/081122.cpp)
