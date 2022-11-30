@@ -38,6 +38,10 @@ int main() {
 
         switch (scelta) {
             case 1:
+                if (agenda.numeroContatti == 10) {
+                    cout << "Limiti di contatti raggiunto!";
+                }
+
                 cout << "Inserisci nome: ";
                 cin >> contatto.nome;
                 cout << "Inserisci cognome: ";
@@ -47,8 +51,53 @@ int main() {
                 agenda.contatti[agenda.numeroContatti] = contatto;
                 agenda.numeroContatti++;
                 cout << "Contatto inserito con successo!\n";
+                break;
+            case 2:
+                cout << "Contatti presenti:" << endl;
 
-                cout << agenda << e
+                for (int i = 0; i < agenda.numeroContatti; i++) {
+                    cout << i + 1 << endl;
+                    cout << agenda.contatti[i].nome << endl;
+                    cout << agenda.contatti[i].cognome << endl;
+                    cout << agenda.contatti[i].numero << endl;
+                    cout << endl;
+                }
+
+                break;
+            case 3:
+                cout << "Inserisci il numero del contatto da eliminare";
+                int numeroContatto;
+                cin >> numeroContatto;
+
+                if (numeroContatto > agenda.numeroContatti) {
+                    cout << "Contatto non trovato";
+                    break;
+                }
+
+                for (int i = numeroContatto - 1; i < agenda.numeroContatti; i++) {
+                    agenda.contatti[i] = agenda.contatti[i + 1];
+                }
+
+                agenda.numeroContatti--;
+
+                cout << "Contatto eliminato con successo!";
+                break;
+            case 4:
+                cout << "Inserisci il numero del contatto da cercare";
+                int numeroContattoDaCercare;
+                cin >> numeroContattoDaCercare;
+
+                if (numeroContattoDaCercare > agenda.numeroContatti) {
+                    cout << "Contatto non trovato";
+                    break;
+                }
+
+                cout << agenda.contatti[numeroContattoDaCercare - 1].nome << endl;
+                cout << agenda.contatti[numeroContattoDaCercare - 1].cognome << endl;
+                cout << agenda.contatti[numeroContattoDaCercare - 1].numero << endl;
+                break;
+            case 5:
+                cout << "Arrivederci!";
                 break;
         }
     }
