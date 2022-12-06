@@ -51,3 +51,8 @@ add_executable(esercizio_e2_301122 ./E301122/esercizio_2.cpp)
 add_executable(esercizio_e3_301122 ./E301122/esercizio_3.cpp)
 add_executable(esercizio_e4_301122 ./E301122/esercizio_4.cpp)
 add_executable(esercizio_e5_301122 ./E301122/esercizio_5.cpp)
+
+add_executable(esercizio_e1_061222 ./E061222/esercizio_1.cpp E061222/calcoli.cpp E061222/calcoli.h)
+add_executable(esercizio_e2_061222 ./E061222/esercizio_2.cpp)
+add_executable(esercizio_e3_061222 ./E061222/esercizio_3.cpp)
+add_executable(esercizio_e4_061222 ./E061222/esercizio_4.cpp)
