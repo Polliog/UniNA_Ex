@@ -6,30 +6,26 @@ using namespace std;
 
 
 int main() {
-    int r = 5;
+    int n;
+    cout << "Inserisci il numero di righe del triangolo di tartaglia: ";
+    cin >> n;
 
-    cout << "Inserisci un numero:" << endl;
-    //cin >> r;
+    int t[n][n];
 
-    int m[5][5];
-
-    m[0][0] = r;
-    for (int i = 1; i < r; i++) {
-        m[i][0] = r;
-        for (int j = 1; j < r;j++) {
-            m[i][j] = m[i-1][j-1] + m[i-1][j];
-        }
-    }
-
-    for (int i = 0; i < r;i++) {
-        {
-            for (int j = 1;j<r;j++)
-                cout << " ";
-
-            for (int j = 0;j <= i;j++) {
-                cout << m[i][j] << "";
-                cout << "\n";
+    for (int i = 0; i < n; i++) {                //1
+        for (int j = 0; j <= i; j++) {
+            if (j == 0 || j == i) {
+                t[i][j] = 1;                  //1..n..1
+            } else {
+                t[i][j] = t[i - 1][j - 1] + t[i - 1][j];  //
             }
         }
     }
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= i; j++) {
+            cout << t[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
 }
