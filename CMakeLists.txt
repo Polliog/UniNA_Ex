@@ -56,3 +56,5 @@ add_executable(esercizio_e1_061222 ./E061222/esercizio_1.cpp E061222/calcoli.cpp
 add_executable(esercizio_e2_061222 ./E061222/esercizio_2.cpp)
 add_executable(esercizio_e3_061222 ./E061222/esercizio_3.cpp)
 add_executable(esercizio_e4_061222 ./E061222/esercizio_4.cpp)
+
+add_executable(esercizio_e1_071222 ./E071222/esercizio_1.cpp)
