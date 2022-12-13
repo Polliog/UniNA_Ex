@@ -68,3 +68,9 @@ add_executable(esercizio_e8_071222 ./E071222/esercizio_8.cpp)
 
 add_executable(esercizio_e1_101222 ./E101222/esercizio_1.cpp)
 add_executable(esercizio_e2_101222 ./E101222/esercizio_2.cpp E101222/libreria.cpp E101222/libreria.h)
+
+add_executable(esercizio_e1_131222 ./E131222/esercizio_1.cpp)
+add_executable(esercizio_e2_131222 ./E131222/esercizio_2.cpp)
+add_executable(esercizio_e3_131222 ./E131222/esercizio_3.cpp)
+add_executable(esercizio_e4_131222 ./E131222/esercizio_4.cpp)
+add_executable(esercizio_e5_131222 ./E131222/esercizio_5.cpp)
